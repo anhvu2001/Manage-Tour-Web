@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    <definition name="tourDetail" extends="baseLayout">
+        <put-attribute name="title" value="Chi Tiết Sản phẩm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/tourDetail.jsp" />
+    </definition>
+    <definition name="news" extends="baseLayout">
+        <put-attribute name="title" value="Tin tức" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/news.jsp" />
+    </definition>
+    <definition name="newsDetail" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết tin tức" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/newsDetail.jsp" />
+    </definition>
+    <definition name="adminTour" extends="baseLayout">
+        <put-attribute name="title" value="Quản lí Tour du lịch" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/adminTour.jsp" />
+    </definition>
+    <definition name="adminNews" extends="baseLayout">
+        <put-attribute name="title" value="Quản lí Tin Tức" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/adminNews.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="DANG NHAP" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/login.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="DANG KY NGUOI DUNG" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/register.jsp" />
+    </definition>
+    <definition name="pay" extends="baseLayout">
+        <put-attribute name="title" value="THANH TOAN" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/pay.jsp" />
+    </definition>
+    <definition name="stats" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê báo cáo" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/stats.jsp" />
+    </definition>
+    
+</tiles-definitions>
